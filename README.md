@@ -11,7 +11,7 @@ First, you have to have Node.js installed.
 `cd Star-Wars-quiz`
 
 ### Run development server
-`npm install`
+`npm install` <br />
 `npm start`
 
 Your page should be loaded at http://localhost:3000
