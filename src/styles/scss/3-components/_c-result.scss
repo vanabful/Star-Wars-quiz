@@ -1,0 +1,59 @@
+.r-result {
+    @include size (100%, 100%);
+    @include flex-display(center, initial, column);
+    position: absolute;
+
+    &__card {
+        @include size (300px, 450px);
+        @include flex-display(initial, initial, column);
+        margin-top: 2em;
+        background-color: $dark-grey;
+        position: relative;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+        &__image {
+            @include size (100%, 40%);
+    
+            img {
+                @include size (100%, 100%);
+            }
+        }
+
+        &__response {
+            @include size (100%, 60%);
+            @include flex-display(center, center, column);
+            color: $white;
+    
+            &__text {
+                text-align: center;
+                padding: 20px 25px;
+            }
+    
+            &__close {
+                width: 50%;
+
+                &__button {
+                    text-transform: uppercase;
+                    width: 100%;
+                    font-size: 12px;
+                    padding: 13px 20px;
+                    color: $white; 
+                    border: none;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &__exit {
+            &__icon {
+                position: absolute;
+                font-size: 1.3em;
+                color: $white;
+                top: 2%;
+                left: 90%;
+            }
+        }
+    }
+}

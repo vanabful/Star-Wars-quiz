@@ -1,0 +1,12 @@
+@import '0-settings/s-variables.scss';
+@import '0-settings/s-mixins.scss';
+
+@import '1-globals/g-base.scss';
+
+@import '2-objects/o-layout.scss';
+
+@import '3-components/c-home.scss';
+@import '3-components/c-quiz.scss';
+@import '3-components/c-form.scss';
+@import '3-components/c-question.scss';
+@import '3-components/c-result.scss';

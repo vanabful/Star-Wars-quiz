@@ -1,0 +1,15 @@
+.f-form {
+    @include flex-display (initial, initial, column);
+    @include size (70%, 100%);
+    margin-bottom: 2em;
+
+    &__submit-button {
+        width: 20%;
+        align-self: flex-end;
+        padding: 15px;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: $basefontsize - 3px;
+    }
+}

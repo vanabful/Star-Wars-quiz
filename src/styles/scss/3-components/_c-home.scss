@@ -1,0 +1,40 @@
+.h-home {
+    @include flex-display(center, center, row);
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/1-screen-background.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat; 
+
+    &__begin-quiz {
+        @include flex-display(center, center, column);
+        max-width: 700px;
+        padding: 20px;
+        margin: 0 auto;
+    
+        &__title {
+            margin-top: 0;
+            color: $white;
+            font-size: 5em;
+            text-align: center;
+        }
+    
+        @media screen and (max-width: 760px){
+            font-size: 4em;
+          }
+    
+        &__link {
+            width: 35%;
+            margin-top: 2em;
+            border-radius: 0;
+            padding: 15px 20px;
+            text-transform: uppercase;
+    
+            &__start-button {
+                @include size (100%, 100%);
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+

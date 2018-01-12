@@ -1,0 +1,49 @@
+.f-question {
+    margin-bottom: 1em;
+    @include flex-display (center, center, column);
+
+    &__question {
+        width: 100%;
+        margin-bottom: 1em;
+        @include flex-display (center, initial, row);
+
+        &__number {
+            @include size (40px, 40px);
+            @include flex-display (center, center, row);
+            font-size: 20px;
+            font-weight: 600;
+            color: $form-text;
+            border-radius: 50%;
+            background-color: $form-background;
+        }
+
+        &__text {
+            margin-left: 1.5em;
+            @include flex-display (initial, initial, column);
+
+            h3 {
+                color: $white;
+                font-size: 20px;
+                margin-top: 0;
+                margin-bottom: 4px;
+            }
+
+            &__error {
+                color: $error;
+            }
+        }
+    }
+
+    &__answers {
+        @include flex-display (initial, initial, column);
+        width: 100%;
+
+        .radio {
+            padding: 10px;
+            background-color: $dark-grey;
+            color: $white;
+            margin-bottom: 0.6em;
+            font-weight: 200;
+        }
+    }
+}

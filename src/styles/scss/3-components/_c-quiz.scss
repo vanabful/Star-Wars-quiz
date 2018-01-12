@@ -1,0 +1,24 @@
+.f-quiz {
+    background-color: $black;
+    @include flex-display (center, center, column);
+    @include size (100%, 100%);
+    position: relative;
+
+    &__back-button {
+        margin: 2em 0;
+        width: 70%;
+        display: flex;
+
+        &__button {
+            color: $white;
+            font-size: $basefontsize + 2px;
+            &:hover {
+                color: $white;
+            }
+            &__icon {
+                margin-right: 1em;
+            }
+        }
+        
+    }
+}

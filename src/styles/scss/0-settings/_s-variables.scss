@@ -1,0 +1,19 @@
+// Font family
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+$primary-font: 'Quicksand', sans-serif;
+
+// Font sizes
+$basefontsize: 16px;
+
+// Page sizes
+$min-width: 320px;
+$max-width: 1000px;
+
+// Colors
+$white: #fff;
+$black: #000;
+$dark-grey: #333333;
+$red: #be2020;
+$form-text: $white;
+$form-background: $dark-grey;
+$error: $red;
